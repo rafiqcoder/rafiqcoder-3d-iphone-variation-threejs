@@ -33,14 +33,10 @@ const Section = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  // background-color: "#9BB5CE";
   @media screen and (max-width: 64em) {
-    // left: 10%;
      width: 90%;
-    //  flex-direction: column;
   }
   @media screen and (max-width: 768px) {
-    // left: 10%;
      width: 100%;
      flex-direction: column;
   }
@@ -58,7 +54,6 @@ const Phone = styled.div`
   position: relative;
   cursor: grab;
   @media screen and (max-width: 64em) {
-    // left: 10%;
      width: 80%;
      
   }
@@ -66,7 +61,6 @@ const Phone = styled.div`
 
 const Colors = styled.ul`
   display: flex;
-  // flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -181,6 +175,7 @@ const PricingSection = () => {
   return (
     <Container>
       <Section ref={sectionRef}>
+        {/* <Canvas camera={{ fov: 12 }} */}
         <Phone>
           <IndicatorText>360&deg; &#x27F2; </IndicatorText>
           <Canvas camera={{ fov: 12 }}>
@@ -195,7 +190,7 @@ const PricingSection = () => {
             <AdaptiveEvents />
             <OrbitControls enableZoom={false} />
           </Canvas>
-
+          
           <Colors>
             <Color
               color="#9BB5CE"
