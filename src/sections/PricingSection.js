@@ -185,10 +185,10 @@ const PricingSection = () => {
               <Model3 />
             </Suspense>
 
-            <Environment preset="night" />
+            <Environment preset="studio" />
             <AdaptiveDpr pixelated />
             <AdaptiveEvents />
-            <OrbitControls enableZoom={false} />
+            <OrbitControls enableZoom={true} />
           </Canvas>
           
           <Colors>
